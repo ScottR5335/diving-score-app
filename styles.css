@@ -1,0 +1,22 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.diverInfo {
+    color:blue;
+}
+.diveInfo {
+    color: red;
+}
+ .diverInfo {
+    background-color: lightyellow;
+ }
+ .diveInfo {
+    background-color: lightyellow;
+ }
+ .judgeContainer {
+    background-color: rgb(220, 235, 190);
+ }
+ .judgeScores {
+    background-color: aqua;
+ }

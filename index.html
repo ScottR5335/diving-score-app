@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diving Calculator</title>
+</head>
+
+<body>
+<!-- Page content goes here. -->
+ <h1> Diving Calculator</h1>
+ <form>
+    <fieldset class="diverInfo">
+        <legend>Diver's personal information</legend>
+        <label for="firstName">Enter the diver's first name:</label>
+        <input type="text" id="firstName" name="firstName">
+        <br><br>
+        <label for="lastName">Enter the diver's last name:</label>
+        <input type="text" id="lastName" name="lastName">
+        <br><br>
+        <label for="team">Enter the diver's team affiliation:</label>
+        <input type="text" id="team" name="team">
+        <br><br>
+    </fieldset>
+    <br>
+    <fieldset class="diveInfo">
+        <legend>Dive details</legend>
+        <label for="dd">Enter the dive's degree of difficulty:</label>
+        <input type="text" id="dd" name="dd">
+        <br><br>
+        <fieldset class="judgeContainer">
+            <legend>All judges' scores</legend>
+            <fieldset class="judgeScores">
+                <legend>Enter the execution score from Judge #1:</legend>
+                <div>
+                    <input type="radio" name="judge1" value=0 id="judge1-0" class="judgeScore">
+                    <label for="judge1-0">0</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge1" value=1 id="judge1-1" class="judgeScore">
+                    <label for="judge1-1">1</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge1" value=2 id="judge1-2" class="judgeScore">
+                    <label for="judge1-2">2</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge1" value=3 id="judge1-3" class="judgeScore">
+                    <label for="judge1-3">3</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge1" value=4 id="judge1-4" class="judgeScore">
+                    <label for="judge1-4">4</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge1" value=5 id="judge1-5" class="judgeScore">
+                    <label for="judge1-5">5</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge1" value=6 id="judge1-6" class="judgeScore">
+                    <label for="judge1-6">6</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge1" value=7 id="judge1-7" class="judgeScore">
+                    <label for="judge1-7">7</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge1" value=8 id="judge1-8" class="judgeScore">
+                    <label for="judge1-8">8</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge1" value=9 id="judge1-9" class="judgeScore">
+                    <label for="judge1-9">9</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge1" value=10 id="judge1-10" class="judgeScore">
+                    <label for="judge1-10">10</label>
+                </div>
+                <!-- HALF POINT ADDED BELOW -->
+                <div>
+                    <label for="judge1Half">Check here to add one-half (0.5) to this judge's score:</label>
+                    <input id="judge1Half" type="checkbox" name="judge1Checkbox" value=0.5 class="judgeScore">
+                </div>
+                <br><br>
+            </fieldset>
+            <fieldset class="judgeScores">
+                <legend>Enter the execution score from Judge #2:</legend>
+                <div>
+                    <input type="radio" name="judge2" value=0 id="judge2-0" class="judgeScore">
+                    <label for="judge2-0">0</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge2" value=1 id="judge2-1" class="judgeScore">
+                    <label for="judge2-1">1</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge2" value=2 id="judge2-2" class="judgeScore">
+                    <label for="judge2-2">2</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge2" value=3 id="judge2-3" class="judgeScore">
+                    <label for="judge2-3">3</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge2" value=4 id="judge2-4" class="judgeScore">
+                    <label for="judge2-4">4</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge2" value=5 id="judge2-5" class="judgeScore">
+                    <label for="judge2-5">5</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge2" value=6 id="judge2-6" class="judgeScore">
+                    <label for="judge2-6">6</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge2" value=7 id="judge2-7" class="judgeScore">
+                    <label for="judge2-7">7</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge2" value=8 id="judge2-8" class="judgeScore">
+                    <label for="judge2-8">8</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge2" value=9 id="judge2-9" class="judgeScore">
+                    <label for="judge2-9">9</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge2" value=10 id="judge2-10" class="judgeScore">
+                    <label for="judge2-10">10</label>
+                </div>
+                <!-- HALF POINT ADDED BELOW -->
+                <div>
+                    <label for="judge2Half">Check here to add one-half (0.5) to this judge's score:</label>
+                    <input id="judge2Half" type="checkbox" name="judge2Checkbox" value=0.5 class="judgeScore">
+                </div>
+                <br><br>
+            </fieldset>
+            <br>
+            <fieldset class="judgeScores">
+                <legend>Enter the execution score from Judge #3:</legend>
+                <div>
+                    <input type="radio" name="judge3" value=0 id="judge3-0" class="judgeScore">
+                    <label for="judge3-0">0</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge3" value=1 id="judge3-1" class="judgeScore">
+                    <label for="judge3-1">1</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge3" value=2 id="judge3-2" class="judgeScore">
+                    <label for="judge3-2">2</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge3" value=3 id="judge3-3" class="judgeScore">
+                    <label for="judge3-3">3</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge3" value=4 id="judge3-4" class="judgeScore">
+                    <label for="judge3-4">4</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge3" value=5 id="judge3-5" class="judgeScore">
+                    <label for="judge3-5">5</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge3" value=6 id="judge3-6" class="judgeScore">
+                    <label for="judge3-6">6</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge3" value=7 id="judge3-7" class="judgeScore">
+                    <label for="judge3-7">7</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge3" value=8 id="judge3-8" class="judgeScore">
+                    <label for="judge3-8">8</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge3" value=9 id="judge3-9" class="judgeScore">
+                    <label for="judge3-9">9</label>
+                </div>
+                <div>
+                    <input type="radio" name="judge3" value=10 id="judge3-10" class="judgeScore">
+                    <label for="judge3-10">10</label>
+                </div>
+                <!-- HALF POINT ADDED BELOW -->
+                <div>
+                    <label for="judge3Half">Check here to add one-half (0.5) to this judge's score:</label>
+                    <input id="judge3Half" type="checkbox" name="judge3Checkbox" value=0.5 class="judgeScore">
+                </div>
+            </fieldset>
+        </fieldset>
+        <br>
+        <div class="submitScores">
+            <button type="button" id="calculateBtn">
+                <img src="12percentcalculator-5149748_640.png" alt="calculator">
+                <br>
+                <strong>Click to calculate<br>this dive's score</strong>
+            </button>
+        </div>
+        <br>
+        <fieldset class="diveScoreReport">
+            <legend>This dive's total score...</legend>
+                <span id="resultOfDive"></span>
+        </fieldset>
+    </fieldset>
+
+ </form>
+<script src="script.js"></script>
+</body>
+
+</html>
